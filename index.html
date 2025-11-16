@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Егор Хорошилов | Видеомонтаж</title>
+  <link rel="icon" href="assets/images/icoco.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Метатеги для корректного отображения на iOS/Android -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#0f0f1b">
+    <meta name="msapplication-TileColor" content="#7f5af0">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="#" class="logo">Egor Khoroshiy</a>
+      <nav class="nav">
+        <a href="#about">Обо мне</a>
+        <a href="#horizontal">Горизонтальные</a>
+        <a href="#vertical">Вертикальные</a>
+        <a href="#order">Сделать заказать</a>
+      </nav>
+      <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container fade-in">
+      <h1>Видеомонтаж под ключь, <br> без траты вашего времени</h1>
+      <p>Мондаж с передовыми нейросетями, ответственный подход к дедлайнам и работе с вами!</p>
+      <a href="#order" class="btn btn-primary">Сделать заказ</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section fade-in">
+    <div class="container">
+      <h2>Обо мне</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>Привет, я Егор. Работаю в Premiere pro. Создаю качественный и цепляющий контент, уделяя - максимум внимания деталям.</p>
+          <p>Чистый и динамичный монтаж, звук, ритм.
+﻿﻿Стильные переходы, анимированные субтитры, базовая графика.
+Форматы: Reels/TikTok/Shorts, YouTube-лонг.
+вертикаль/горизонталь.</p>
+          <p>От вас (для скорости и качества):
+Исходники (облако, исходное качество).
+﻿﻿﻿Краткое ТЗ (цель, длительность, референсы).
+</p>
+
+        </div>
+        <div class="about-image">
+          <img src="assets/images/avo.jpg" alt="Егор Хорошилов" class="avatar">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Horizontal Videos -->
+  <section id="horizontal" class="section fade-in">
+    <div class="container">
+      <h2>Горизонтальные видео</h2>
+      <div class="video-grid horizontal-grid" id="horizontal-videos">
+        <!-- Заполняется автоматически -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Vertical Videos -->
+  <section id="vertical" class="section fade-in">
+    <div class="container">
+      <h2>Вертикальные видео</h2>
+      <div class="video-grid vertical-grid" id="vertical-videos">
+        <!-- Заполняется автоматически -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Order & Contacts -->
+  <section id="order" class="section fade-in">
+    <div class="container">
+      <div class="order-contact-wrapper">
+        <div class="order-form">
+          <h2>Сделать заказ</h2>
+          <form action="https://formspree.io/f/xyza1234" method="POST">
+            <input type="text" name="name" placeholder="Ваше имя *" required>
+            <input type="email" name="email" placeholder="Email или Telegram *" required>
+            <textarea name="message" placeholder="Описание задачи (сроки, формат, идеи, вопросы) *" required></textarea>
+
+            <input type="hidden" name="_subject" value="Видеомонтаж — Новый заказ">
+            <input type="hidden" name="_autoresponse" value="Спасибо за заказ! Я отвечу в течение 24 часов.">
+            <input type="hidden" name="_next" value="thanks.html">
+
+            <button type="submit" class="btn btn-primary">Отправить запрос</button>
+          </form>
+        </div>
+        <div class="contacts">
+          <h2>Связаться со мной</h2>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fab fa-telegram"></i>
+            </div>
+            <div class="contact-info">
+              <div class="contact-label">Telegram</div>
+              <a href="https://t.me/KhoroshiyLove" target="_blank" class="contact-link">@Egor Khoroshiy</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fab fa-youtube"></i>
+            </div>
+            <div class="contact-info">
+              <div class="contact-label">YouTube</div>
+              <a href="#" target="_blank" class="contact-link">-в разработке-</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fab fa-whatsapp"></i>
+            </div>
+            <div class="contact-info">
+              <div class="contact-label">WhatsApp</div>
+              <a href="https://wa.me/qr/C7IJMAP3LPFWA1" target="_blank" class="contact-link">Egor Khoroshiy</a>
+            </div>
+          </div>
+          <div class="contact-item email-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-info">
+              <div class="contact-label">Email</div>
+              <a href="mailto:khoroshilovegorka@gmail.com" class="contact-link">khoroshilovegorka@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col logo-col">
+          <div class="footer-logo">
+            <span class="logo-text">ЕГОР ХОРОШИЛОВ</span>
+            <div class="logo-sub">Видеомонтаж · 2022–2025</div>
+          </div>
+          <p class="footer-desc">Создаю видео, которые хочется пересматривать. Кинематографичный стиль, внимание к деталям, дедлайны — вовремя.</p>
+        </div>
+
+        <div class="footer-col nav-col">
+          <h3>Навигация</h3>
+          <ul>
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#horizontal">Горизонтальные</a></li>
+            <li><a href="#vertical">Вертикальные</a></li>
+            <li><a href="#order">Сделать заказ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col social-col">
+          <h3>Соцсети</h3>
+          <div class="social-links">
+            <a href="https://t.me/KhoroshiyLove" target="_blank" class="social-link telegram">
+              <i class="fab fa-telegram"></i>
+              <span>Telegram</span>
+            </a>
+            <a href="#" target="_blank" class="social-link youtube">
+              <i class="fab fa-youtube"></i>
+              <span>YouTube</span>
+            </a>
+            <a href="https://wa.me/qr/C7IJMAP3LPFWA1" target="_blank" class="social-link whatsapp">
+              <i class="fab fa-whatsapp"></i>
+              <span>WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="copyright">
+          &copy; Egor Khoroshiy. Сайт создан по заказу в 2025 г.
+        </div>
+        <div class="made-by">
+          Сделано с ❤️ в <a href="https://t.me/KhoroshiyLove">Telegram</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
